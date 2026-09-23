@@ -7,7 +7,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./app:/code/app
+      - ./:/code
     depends_on:
       mysql:
         condition: service_healthy
